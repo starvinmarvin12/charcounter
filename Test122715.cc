@@ -1,9 +1,11 @@
 #include <stdio.h>
 
+char sentence[80] ; 	// Create a character array
+
 int main() {
 
 	char c = 0 ;			// Variable to hold character input by user
-	//char sentence[80] ; 	// Create a character array
+
 
 	int count = 0 ;			// Input character count initialized
 
@@ -13,12 +15,13 @@ int main() {
 	// Read in and count each entered character
 	while((c = getchar()) != '\n') {
 
-		count++ ;
-	//	sentence[count++] = c ;
+	//	count++ ;
+		sentence[count++] = c ;
 	}
 
 	printf(" The number of characters entered is %d", count) ;
-	puts("\n The characters entered are:") ;
+	puts("\n The characters entered in sequenced order are:") ;
+	puts( sentence ) ;
 	
 	return 0 ;
 } 
