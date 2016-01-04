@@ -15,7 +15,6 @@ int main() {
 	// Read in and count each entered character
 	while((c = getchar()) != '\n') {
 
-	//	count++ ;
 		sentence[count++] = c ;
 	}
 
